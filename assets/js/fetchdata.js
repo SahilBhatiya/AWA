@@ -9,7 +9,7 @@
                 for (const [key, value] of Object.entries(val)) {
                     document.body.innerHTML += `${key}: ${value} <br>`;
                 }
-
+                document.body.innerHTML += "<br>";
             })
             document.body.innerHTML += "<br>";
         });
