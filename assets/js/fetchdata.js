@@ -200,7 +200,7 @@ function fetchData(LinkClicked) {
 
     }
 }
-setTimeout(() => { fetchData("Adarsh-Login") }, 4500);
+setTimeout(() => { fetchData("Adarsh") }, 4500);
 
 const scriptURLHidden = 'https://script.google.com/macros/s/AKfycbwGU68Yc9BjFKU-spCPr5Gzs4wGr2ZTqPyF_68HUhmrHRrRfr_d/exec';
 

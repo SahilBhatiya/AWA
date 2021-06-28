@@ -19,6 +19,7 @@ async function Login() {
     firebase.auth().signInWithEmailAndPassword(userEmail, userPassword)
         .then((userCredential) => {
             var user = userCredential.user;
+            window.location += "Dashboard/";
         })
         .catch((error) => {
             DisplayMsg(1, "Sorry!", "You Are Not Registered", 0, "t");
@@ -27,7 +28,7 @@ async function Login() {
 
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        window.location += "Dashboard/";
+        DisplayMsg(0, "Sucess!", "You Have Logged In", 0, "t");
     } else if (window.location.includes("Dashboard")) {
         DisplayMsg(1, "Sorry!", "You Are Not Registered", 0, "t");
     }
