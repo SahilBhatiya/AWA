@@ -45,24 +45,6 @@
     background-color: var(--secondary-background-color);
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    background: 0
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--secondary-background-color);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-hover-color);
-}
-
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -509,6 +491,10 @@ input[type=number] {
 
 .pointer {
     cursor: pointer;
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll;
 }
 
 .Employees-now {
