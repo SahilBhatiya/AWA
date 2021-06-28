@@ -494,7 +494,7 @@ input[type=number] {
 }
 
 .overflow-x-scroll {
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .Employees-now {
