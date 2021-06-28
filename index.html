@@ -12,8 +12,11 @@
     <script rel="preload" src="./assets/js/firebase-app.js"></script>
     <script rel="preload" src="./assets/js/firebase-auth.js"></script>
     <script rel="preload" src="./assets/js/firebase-database.js"></script>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script defer src="./assets/js/main.js"></script>
     <script defer src="./assets/js/fetchdata.js"></script>
+    <script defer src="./assets/js/Auth.js"></script>
 </head>
 
 <body class="">
@@ -50,12 +53,26 @@
 
                 <div class="row mt-5 mb-3">
                     <div class="col-12 text-center py-2">
-                        <input type="button" value="Login" class="btn btn-primary border-0 shadow-input px-5 py-2 border-8 outline-none">
+                        <input type="button" value="Login" onclick="Login()" class="btn btn-primary border-0 shadow-input px-5 py-2 border-8 outline-none">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="alert container alert-dismissible fade mt-3 position-fixed border-radius-8 smooth-transition user-select-none justify-content-center mx-auto text-white shadow w-75" role="alert" id="AlertMsg" style="transform:translateX(-50%); left:50%">
+        <strong id="DisplayAlertHeading" class="letter-spacing-1 mr-1"></strong>
+        <span id="DisplayAlertContent"></span>
+        <button type="button" class="close smooth-transition text-white p-0 mr-2 border-primary-color" style="top: 50%; transform: translateY(-55%);" onclick="removeDisplayMsg(10)" aria-label="Close">
+                    <span aria-hidden="true" class="px-2 pt-0 pb-1 bg-opacity-05 border-radius-8">&times;</span>
+                </button>
+    </div>
+
+
+
+
+
 </body>
 
 </html>
