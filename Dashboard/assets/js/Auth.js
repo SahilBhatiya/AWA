@@ -33,3 +33,11 @@ firebase.auth().onAuthStateChanged(function(user) {
         DisplayMsg(1, "Sorry!", "You Are Not Registered", 0, "t");
     }
 });
+
+async function LogOut() {
+    firebase.auth().signOut().then(() => {
+        window.location = "/";
+    }).catch((error) => {
+        alert(error);
+    });
+}
