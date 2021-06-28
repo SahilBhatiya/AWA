@@ -1,4 +1,4 @@
-(() => {
+/* (() => {
     firebase.database().ref("Customers").once('value', function(snapshot) {
         let k = 1;
         snapshot.forEach(function(ChildSnapshot) {
@@ -14,4 +14,4 @@
             document.body.innerHTML += "<br>";
         });
     });
-})();
+})(); */
