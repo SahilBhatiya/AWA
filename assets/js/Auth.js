@@ -6,7 +6,7 @@ async function Login() {
             var user = userCredential.user;
         })
         .catch((error) => {
-
+            DisplayMsg(1, "Error!", "Cannot Login", 0, "t");
         });
 
 }
